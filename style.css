@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+
+.banner
+{
+    position: relative;
+    width: 100%;
+   /* min-height: 100vh; */
+   height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/EPL1-1024x619.jpg')
+}
+.banner .MV
+{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .MV h2
+{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .MV p
+{
+    font-size: 1em;
+    color: #fff;
+}
+.btn-major
+{
+    font-size: 1.5em;
+    color: rgb(223, 7, 0);
+    background: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.8s;
+}
+.btn-major:hover
+{
+    letter-spacing: 6px;
+}
+header
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.8s;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .logo span
+{
+    color: rgb(5, 255, 242);
+}
+
+
+
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+
+}
+header.sticky .navigation li a
+{
+    color: #111;
+}
+header .navigation li a:hover
+{
+    color: rgb(5, 255, 242);
+}
+
+
+
+
+section
+{
+    padding: 100px; 
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+}
+.row .col50
+{
+    position: relative;
+    width: 47%;
+}
+
+/*new custom*/
+.titleText1
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span
+{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col50 .img2
+{
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; */
+    height: 100%;
+}
+.row .col50 .img2 img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*custom*/
+.teams
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+/*C*/
+.teams .tiles
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+
+/*C*/
+
+.teams .tiles .box
+{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+
+
+/*C*/
+
+.teams .tiles .box .badge
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+/*C*/
+
+.teams .tiles .box .badge img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teams .tiles .box .badge .text
+{
+    padding: 15px 0px 5px;
+}
+.teams .tiles .box .badge .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+
+
+
+
+
+
+
+/*Managers*/
+
+.gaffer .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.gaffer .content .box
+{
+    width: 250px;
+    margin: 15px;
+}
+.gaffer .content .box .manage
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.gaffer .content .box .manage img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gaffer .content .box .text
+{
+    padding: 15px 0 5px;
+}
+.gaffer .content .box .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Legends Tiles */
+
+
+.epllegends .title
+{
+   /* background: url(img/manchester-united-logo-vector.png);
+    background-size: cover;
+    opacity: 0.5; */
+    color: rgb(4, 250, 17);
+}
+.white p,
+.white .titleText
+{
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+.manulegend .crestbackground
+{
+  /*  background-image: url(img/manchester-united-logo-vector.png);*/
+    /*opacity: 0.5; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.arsenalegend .crestbackground
+{
+  /*  background-image: url(img/manchester-united-logo-vector.png);*/
+    /*opacity: 0.5; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.epllegends .content .box
+{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+
+.epllegends .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+/*
+.epllegends .content .box
+{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+*/
+.epllegends .content .box .legendimg
+{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.epllegends .content .box .legendimg img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.epllegends .content .box .legendtext
+{
+    text-align: center;
+}
+.epllegends .content .box .legendtext p
+{
+    color: #666;
+    font-style: italic;
+    opacity: 1;
+}
+.epllegends .content .box .legendtext h3
+{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*copyright Text*/
+
+
+
+.copyrightText
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.copyrightText p
+{
+    color: #333;
+}
+
+.copyrightText a
+{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li
+    {
+        margin-left: 0;
+    }
+    header .navigation li a
+    {
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 20px;
+    }
+    .banner .content h2
+    {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row
+    {
+        flex-direction: column;
+    }
+    .row .col50
+    {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .manage
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content
+    {
+        margin-top: 20px;
+    }
+    .menu .content .box
+    {
+        margin: 10px;
+    }
+    .menu .content .box .manage
+    {
+        height: 260px;
+    }
+    .title
+    {
+        text-align: center;
+    }
+    .titleText
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .epllegends .content .box
+    {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm
+    {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+}
+@media (max-width: 480px)
+{
+    .banner .content h2
+    {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
